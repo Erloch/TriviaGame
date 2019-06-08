@@ -1,0 +1,36 @@
+body{
+    background:pink;
+
+}
+#header{
+    font-size:50px;
+    text-align:center;
+    padding-top:30px;
+    margin-bottom:50px;
+}
+#game{
+    height:800px;
+    width:900px;
+    margin: 20px 133px 20px auto;
+    background:lightskyblue;
+}
+#timmer{
+    text-align:center;
+    font-size:30px;
+}
+#answers{
+    height:800px;
+    width:865px;
+    margin-top:20px;
+    text-align:center;
+}
+#list{
+    list-style-type:none;
+}
+#question{
+    height:100px;
+    text-align:center;
+}
+#total{
+    text-align:center;
+}
