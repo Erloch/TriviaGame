@@ -17,6 +17,7 @@ body{
 #timmer{
     text-align:center;
     font-size:30px;
+    margin-top:18px;
 }
 #answers{
     height:800px;
@@ -30,7 +31,21 @@ body{
 #question{
     height:100px;
     text-align:center;
+    font-size:30px;
 }
 #total{
     text-align:center;
+    height:100px;
+    margin-bottom:6px;
 }
+#check, #correct, #wrong{
+margin-right:20px;
+margin-bottom:6px;
+}
+.ans, .right{
+font-size:30px;
+}
+#score{
+    margin-bottom:0;
+}
+

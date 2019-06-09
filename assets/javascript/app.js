@@ -1,32 +1,35 @@
-var question = ["question1", "question2", "question3", "question4", "question5"];
-var score = 0;
-var losses = 0;
-var answers = { a1: ["f1", "f2", "f3", "f4", "a1"], a2: ["f1", "a2", "f3", "f4", "f2"], a3: ["f1", "f2", "a3", "f4", "f3"], a4: ["f1", "f2", "a4", "f4", "f3"], a5: ["a5", "f2", "f3", "f4", "f1"] };
+var question = ["How many Police Academy movies were there in the 1980s?", "question2", "question3", "question4", "question5"];
+var answers = { a1: ["4", "9", "2", "5", "6"], a2: ["f1", "a2", "f3", "f4", "f2"], a3: ["f1", "f2", "a3", "f4", "f3"], a4: ["f1", "f2", "a4", "f4", "f3"], a5: ["a5", "f2", "f3", "f4", "f1"] };
+var correct = false;
 
-
-function mkAnswers1() {
-   
-    for (var i = 0; i < answers.a1.length; i++) {
-        var ans = $("<li>" + answers.a1[i] + "</li>");
-        
-        
+function mkPg1() {
+    for (var i = 0; i < answers.a1.length - 1; i++) {
+        var ans = $("<div>" + "<button id = 'check'></button>" + answers.a1[i] + "</div>");
         // var list = $("<ul>");
+        console.log(ans);
         ans.addClass("ans");
-        $("#list").append(ans);
+        $("#answers").append(ans);
         // console.log(list);
-        // console.log(ans);
-        $("#list").on("click", "ans", function a1() {
-        //     if (answers.a1[4]) {
-        //         score++;
-        //     }
-        //     else{
-        //         losses++;
-        //     }
-
-        });
     }
+    var right = $("<div>" + "<button id = 'correct'></button>" + answers.a1[4] + "</div>");
+    right.addClass("right");
+    $("#answers").append(right);
+    var quest = $("<div>" + question[0] + "</div>");
+    quest.addClass("quest");
+    $("#question").append(quest);
 };
-mkAnswers1();
+        $("#answers").on("click", "#correct", function a1(event) {
+            event.preventDefault();
+    
+            if (correct = document.getElementById(correct)) {
+                alert("You Are Correct!!")
+            } else {
+                alert("Wrong Try Again/n" + right)
+            }
+    
+    
+        });
+mkPg1();
 // function mkAnswers2(){
 //     $("#answers").empty();
 
@@ -104,9 +107,9 @@ mkAnswers1();
 // function quest() {
 //     $("#question").empty();
 //     for (var i = 0; i < question.length; i++) {
-//         var quest = question[i];
+//         var quest = $(question[i];
 
-//         // $("#question").append(quest);
+//         $("#question").append(quest);
 //     }
 //     console.log(quest)
 // };
