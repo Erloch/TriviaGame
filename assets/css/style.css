@@ -25,9 +25,7 @@ body{
     margin-top:20px;
     text-align:center;
 }
-#list{
-    list-style-type:none;
-}
+
 #question{
     height:100px;
     text-align:center;
@@ -38,9 +36,9 @@ body{
     height:100px;
     margin-bottom:6px;
 }
-#check, #correct, #wrong{
+.check, .correct, #wrong{
 margin-right:20px;
-margin-bottom:6px;
+margin-bottom:3px;
 }
 .ans, .right{
 font-size:30px;
